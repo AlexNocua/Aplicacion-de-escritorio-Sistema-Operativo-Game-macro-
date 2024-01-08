@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9C8AC2A6-42BE-42A3-839C-9F39D65832D5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SistemaOP.My.MyApplication</StartupObject>
+    <RootNamespace>SistemaOP</RootNamespace>
+    <AssemblyName>SistemaOP</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SistemaOP.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SistemaOP.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Canje de monedas.Designer.vb">
+      <DependentUpon>Canje de monedas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Canje de monedas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColorMax1.Designer.vb">
+      <DependentUpon>ColorMax1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ColorMax1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Panel De Usuario.Designer.vb">
+      <DependentUpon>Panel De Usuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Panel De Usuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro.Designer.vb">
+      <DependentUpon>Registro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Registro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tienda.Designer.vb">
+      <DependentUpon>Tienda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tienda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Canje de monedas.resx">
+      <DependentUpon>Canje de monedas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ColorMax1.resx">
+      <DependentUpon>ColorMax1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel De Usuario.resx">
+      <DependentUpon>Panel De Usuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registro.resx">
+      <DependentUpon>Registro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tienda.resx">
+      <DependentUpon>Tienda.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\game-console-6603120_1920.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Game.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mario-1557240_1920.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barra de tareas.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\assassin-avatar_114347.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carro-deportivo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\de-viaje.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diver-avatar_114346.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\encabezamiento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fireman-avatar_114351.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pelear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soldier-avatar_114340.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\robot01_90832.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minecraft-6923660_1920.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tunnel-3233082_1920.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car-5161457_1920.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spartan-1751249_1920.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tienda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\almacenamiento-de-datos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\palanca-de-mando.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ajustar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tienda %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moneda-dolar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cromo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\955904.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cinco-estrellas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\full.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yoschi-1557255_1920.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Call.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fornite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bateria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\game-console-6603120_19201.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aplicacion.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Halo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\personajes_1.jpg_976912859.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
